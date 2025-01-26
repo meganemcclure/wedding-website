@@ -36,8 +36,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Italianno&family=Quicksand&family=Righteous&display=swap" 
           rel="stylesheet"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand&family=Righteous&display=swap" rel="stylesheet"></link>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased animate-appearfast`}>
         <Navbar />
         {children}
       </body>

@@ -18,11 +18,12 @@ export default function Navbar() {
     return (
         <nav className="absolute w-full flex flex-row justify-end lg:justify-center gap-12 p-8 border-b border-primary">
           <Image className="absolute top-4 left-4 h-16" src={logo} alt={"M&B logo"}/>
-          <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>Home</Link>
-          {/* <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>Wedding Party</Link>
+          <div className="h-8"></div>
+          {/* <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>Home</Link>
+          <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>Wedding Party</Link>
           <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>Gifts</Link>
           <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>FAQ</Link> */}
-          <Sheet>
+          {/* <Sheet>
             <SheetTrigger>
               <Menu className="lg:hidden h-8 w-8 text-primary"/>
             </SheetTrigger>
@@ -35,12 +36,12 @@ export default function Navbar() {
               </SheetHeader>
               <div className="h-full w-full text-center flex flex-col justify-center align-center gap-10">
                 <Link className={"text-2xl font-instrument-serif"} href={"./"}>Home</Link>
-                {/* <Link className={"text-2xl font-instrument-serif"} href={"./"}>Wedding Party</Link>
+                <Link className={"text-2xl font-instrument-serif"} href={"./"}>Wedding Party</Link>
                 <Link className={"text-2xl font-instrument-serif"} href={"./"}>Gifts</Link>
-                <Link className={"text-2xl font-instrument-serif"} href={"./"}>FAQ</Link> */}
+                <Link className={"text-2xl font-instrument-serif"} href={"./"}>FAQ</Link>
               </div>
             </SheetContent>
-          </Sheet>
+          </Sheet> */}
         </nav>
     )
 }

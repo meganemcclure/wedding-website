@@ -57,10 +57,12 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		keyframes: {
-			appear: { "0%": {opacity: "0"}, "100%": {opaciy: "1"}}
+			appear: {"0%": {opacity: "0"}, "100%": {opaciy: "1"}},
+			scale: {"0%": {scale: "0.95"}, "100%": {scale: "1"}}
 		},
         animation: {
-          appear: "appear 3s ease-in-out",
+          appearslow: "appear 3s ease-in-out",
+		  appearfast: "appear 1s ease-out"
         }
   	}
   },
