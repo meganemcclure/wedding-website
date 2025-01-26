@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <p className={"animate-appearslow text-5xl md:text-7xl lg:text-8xl text-primary -mb-4 md:-mb-6 lg:-mb-9"} style={{ fontFamily: 'Italianno, serif' }}>{`Save The Date`}</p>
           <h1 className={"animate-appearslow  text-7xl md:text-8xl lg:text-9xl"} style={{ fontFamily: 'Instrument Serif, serif' }}>{`08.01.2026`}</h1>
-          <p className={"text-wrap max-w-[450px] text-center pt-20"} style={{ fontFamily: 'montserrat, sans-serif'}}>{`Welcome to Brian and Megan's wedding website. We're so excited to have you join us on our special day!`}</p>
+          <p className={"text-wrap max-w-[450px] text-center pt-20"} style={{ fontFamily: 'montserrat, sans-serif'}}>{`Welcome to Brian and Megan's wedding website. We're so excited to have you join us on our special day! Stay tuned for more details to come.`}</p>
         </div>
 
         <Image className={"absolute bottom-0 left-0 w-full h-32"} src={lake} alt={"lake line drawing"}/>
