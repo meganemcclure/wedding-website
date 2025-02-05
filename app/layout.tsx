@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import Image from "next/image";
+import lake from "@/public/lake line drawing 1.svg"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,7 +43,14 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased animate-appearfast`}>
         <Navbar />
-        {children}
+        <main className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16">
+            <div className="row-start-2 max-w-xl">
+            {children}
+            </div>
+
+            <Image className={"row-start-3 w-full h-32"} src={lake} alt={"lake line drawing"}/>
+        </main>
+        <Footer />
       </body>
     </html>
     </>
