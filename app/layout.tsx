@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import Image from "next/image";
-import lake from "@/public/lake line drawing 1.svg";
 import backgroundFern from "@/public/background-ferns.svg";
-// import accentFern from "@/public/accent-fern.png";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -48,7 +45,10 @@ export default function RootLayout({
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased animate-appearfast relative min-h-screen`}
 				>
-					<div className="absolute inset-0 bg-[url('@/public/background-ferns.svg')] bg-cover bg-center opacity-[.08] pointer-events-none -z-10" />
+					<div
+						style={{ backgroundImage: `url(${backgroundFern.src})` }}
+						className="absolute inset-0 bg-cover bg-center opacity-[.08] pointer-events-none -z-10"
+					/>
 					<Navbar />
 					<main className="absolute top-0 h-full w-full">{children}</main>
 				</body>

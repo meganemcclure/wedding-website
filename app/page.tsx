@@ -1,6 +1,4 @@
 import Image from "next/image";
-import lake from "@/public/lake line drawing 1.svg";
-import backgroundFern from "@/public/background-ferns.svg";
 import accentFern from "@/public/accent-fern.svg";
 
 export default function Home() {
