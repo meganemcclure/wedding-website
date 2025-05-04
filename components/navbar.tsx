@@ -1,6 +1,7 @@
 // import Link from "next/link";
-import logo from "@/public/logo1.svg"
+import logo from "@/public/logo1.svg";
 import Image from "next/image";
+import Link from "next/link";
 // import { Button } from "@/components/ui/button"
 // import {
 //   Sheet,
@@ -15,15 +16,39 @@ import Image from "next/image";
 // import { Menu } from "lucide-react";
 
 export default function Navbar() {
-    return (
-        <nav className="absolute w-full flex flex-row justify-end lg:justify-center gap-12 p-8 border-b border-primary">
-          <Image className="absolute top-4 left-4 h-16" src={logo} alt={"M&B logo"}/>
-          <div className="h-8"></div>
-          {/* <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>Home</Link>
-          <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>Wedding Party</Link>
-          <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>Gifts</Link>
-          <Link className={"text-2xl font-instrument-serif hidden lg:block"} href={"./"}>FAQ</Link> */}
-          {/* <Sheet>
+	return (
+		<nav className="sticky top-0 w-full flex flex-row justify-end lg:justify-center gap-12 p-6 pb-10 bg-gradient-to-b from-background from-60% to-transparent">
+			<Image
+				className="absolute top-2 left-2 h-14"
+				src={logo}
+				alt={"M&B logo"}
+			/>
+			<div className="h-8"></div>
+			{/* <Link
+				className={"text-2xl font-instrument-serif hidden lg:block"}
+				href={"./wedding-website"}
+			>
+				Home
+			</Link>
+			<Link
+				className={"text-2xl font-instrument-serif hidden lg:block"}
+				href={"./wedding-website"}
+			>
+				Wedding Party
+			</Link>
+			<Link
+				className={"text-2xl font-instrument-serif hidden lg:block"}
+				href={"./wedding-website"}
+			>
+				Gifts
+			</Link>
+			<Link
+				className={"text-2xl font-instrument-serif hidden lg:block"}
+				href={"./wedding-website"}
+			>
+				FAQ
+			</Link> */}
+			{/* <Sheet>
             <SheetTrigger>
               <Menu className="lg:hidden h-8 w-8 text-primary"/>
             </SheetTrigger>
@@ -42,6 +67,6 @@ export default function Navbar() {
               </div>
             </SheetContent>
           </Sheet> */}
-        </nav>
-    )
+		</nav>
+	);
 }
