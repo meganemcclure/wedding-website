@@ -73,7 +73,7 @@ const questions = [
 export default function FAQPage() {
 	return (
 		<div className="h-full w-full flex justify-center items-start md:items-center py-auto p-6 pt-20">
-			<div className="w-full max-w-3xl flex flex-col justify-center items-center gap-4 p-4 bg-background rounded-lg">
+			<div className="animate-appearfast w-full max-w-3xl flex flex-col justify-center items-center gap-4 p-4 bg-background p-4 md:p-10 lg:p-12 rounded-lg drop-shadow-2xl">
 				<Accordion
 					type="single"
 					collapsible
