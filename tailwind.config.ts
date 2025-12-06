@@ -56,14 +56,46 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-		keyframes: {
-			appear: {"0%": {opacity: "0"}, "100%": {opaciy: "1"}},
-			scale: {"0%": {scale: "0.95"}, "100%": {scale: "1"}}
-		},
-        animation: {
-          appearslow: "appear 3s ease-in-out",
-		  appearfast: "appear 1s ease-out"
-        }
+  		keyframes: {
+  			appear: {
+  				'0%': {
+  					opacity: '0'
+  				},
+  				'100%': {
+  					opaciy: '1'
+  				}
+  			},
+  			scale: {
+  				'0%': {
+  					scale: '0.95'
+  				},
+  				'100%': {
+  					scale: '1'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			appearslow: 'appear 3s ease-in-out',
+  			appearfast: 'appear 1s ease-out',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
