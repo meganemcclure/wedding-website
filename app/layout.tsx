@@ -47,7 +47,7 @@ export default function RootLayout({
 				>
 					<div
 						style={{ backgroundImage: `url(${backgroundFern.src})` }}
-						className="absolute inset-0 bg-cover bg-center opacity-[.08] pointer-events-none -z-10"
+						className="h-full fixed inset-0 bg-cover bg-center opacity-[.08] pointer-events-none -z-10"
 					/>
 					<Navbar />
 					<main className="absolute top-0 h-full w-full">{children}</main>
