@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
 	return (
-		<div className="h-screen w-full flex justify-center items-center gap-16">
+		<div className="h-screen w-full flex justify-center items-center gap-16 p-6">
 			<div className="animate-appearfast absolute top-0 bottom-0 -left-20 right-0 overflow-hidden -z-10 pointer-events-none">
 				<Image
 					src={accentFern}

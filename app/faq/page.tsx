@@ -54,8 +54,7 @@ const questions = [
 			<p>
 				If we have specified "and guest" on your invitation envelope, then yes!
 				If not we kindly ask that you do not bring any guests, as our seating is
-				limited. You can also reference the back of your invitation to see the
-				number of seats we have reserved for you.
+				limited.
 			</p>
 		),
 	},
