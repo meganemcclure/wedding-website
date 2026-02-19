@@ -35,7 +35,7 @@ const pages = [
 export default function Navbar() {
 	return (
 		<nav
-			className="z-50 sticky top-0 w-full flex flex-row justify-end lg:justify-center gap-12 p-6 pb-10 bg-gradient-to-b from-background from-60% to-transparent"
+			className="z-50 absolute top-0 w-full flex flex-row justify-end lg:justify-center gap-12 p-6 pb-10 bg-gradient-to-b from-background from-60% to-transparent"
 			style={{ fontFamily: "Instrument Serif, serif" }}
 		>
 			<Image

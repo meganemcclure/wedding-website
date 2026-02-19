@@ -43,14 +43,16 @@ export default function RootLayout({
 					></link>
 				</head>
 				<body
-					className={`${geistSans.variable} ${geistMono.variable} antialiased animate-appearfast relative min-h-screen`}
+					className={`${geistSans.variable} ${geistMono.variable} antialiased animate-appearfast relative overflow-x-hidden`}
 				>
 					<div
 						style={{ backgroundImage: `url(${backgroundFern.src})` }}
 						className="h-full fixed inset-0 bg-cover bg-center opacity-[.08] pointer-events-none -z-10"
 					/>
 					<Navbar />
-					<main className="absolute top-0 h-full w-full">{children}</main>
+					<main className="relative top-0 w-full min-h-[100dvh]">
+						{children}
+					</main>
 				</body>
 			</html>
 		</>
