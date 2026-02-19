@@ -1,32 +1,31 @@
-import { Separator } from "@/components/ui/separator";
-import Image from "next/image";
+// import Image from "next/image";
 
-const Profile = ({
-	title,
-	name,
-	description,
-	img,
-	imgAlt,
-	className,
-}: {
-	name: string;
-	title: string;
-	description?: string;
-	img: string;
-	imgAlt: string;
-	className?: string;
-}) => {
-	return (
-		<div className={`w-full flex flex-col items-center gap-4 ${className}`}>
-			<Image src={img} alt={imgAlt} className="bg-white h-20 w-32" />
-			<span className="w-full flex flex-col">
-				<h1 className="text-4xl">{name}</h1>
-				<h2 className="text-lg">{title}</h2>
-				{description && <p>{description}</p>}
-			</span>
-		</div>
-	);
-};
+// const Profile = ({
+// 	title,
+// 	name,
+// 	description,
+// 	img,
+// 	imgAlt,
+// 	className,
+// }: {
+// 	name: string;
+// 	title: string;
+// 	description?: string;
+// 	img: string;
+// 	imgAlt: string;
+// 	className?: string;
+// }) => {
+// 	return (
+// 		<div className={`w-full flex flex-col items-center gap-4 ${className}`}>
+// 			<Image src={img} alt={imgAlt} className="bg-white h-20 w-32" />
+// 			<span className="w-full flex flex-col">
+// 				<h1 className="text-4xl">{name}</h1>
+// 				<h2 className="text-lg">{title}</h2>
+// 				{description && <p>{description}</p>}
+// 			</span>
+// 		</div>
+// 	);
+// };
 
 export default function FAQPage() {
 	return (
