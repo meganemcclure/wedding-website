@@ -47,6 +47,7 @@ export default function Home() {
 							href={
 								"https://docs.google.com/forms/d/e/1FAIpQLSdHADA0ZNQ7iYOdtiXYMpfszNEpKxafLDaIPWwCEFnXOh9_7g/viewform?usp=header"
 							}
+							target="_blank"
 						>
 							RSVP
 						</Link>
