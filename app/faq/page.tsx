@@ -52,10 +52,10 @@ const questions = [
 		q: <h1>Can I bring a plus one?</h1>,
 		a: (
 			<p>
-				If we have specified "and guest" on your invitation, then yes! If not we
-				kindly ask that you do not bring any guests, as our seating is limited.
-				You can also reference the back of your invitation to see the number of
-				seats we have reserved for you.
+				If we have specified "and guest" on your invitation envelope, then yes!
+				If not we kindly ask that you do not bring any guests, as our seating is
+				limited. You can also reference the back of your invitation to see the
+				number of seats we have reserved for you.
 			</p>
 		),
 	},
@@ -68,11 +68,53 @@ const questions = [
 			</p>
 		),
 	},
+	{
+		q: <h1>Why do we have to arrive so early?</h1>,
+		a: (
+			<p>
+				The wedding will be held at the McClure residence on South Lane Road.
+				Since this is a residential address with a long driveway, we want to
+				ensure guests have ample time to park, and be shuttled to the house
+				before the ceremony.
+			</p>
+		),
+	},
+	{
+		q: (
+			<h1>
+				What if I can't physically attend, but I still want to participate?
+			</h1>
+		),
+		a: (
+			<p>
+				We plan to have a live stream running for those that cannot physically
+				attend, but still wish to watch. If you wish to partake in the live
+				stream please email Megan at{" "}
+				<Link
+					href={"mailto:meganemcclure@gmail.com"}
+					className={"underline  decoration-1"}
+				>
+					meganemcclure@gmail.com
+				</Link>
+				.
+			</p>
+		),
+	},
+	{
+		q: <h1>Do you have a gift registry?</h1>,
+		a: (
+			<p>
+				We are currently living in a small apartment, and don't have much room
+				for physical items. If you wish to give a gift we would appreciate
+				donations to our house/honeymoon fund.
+			</p>
+		),
+	},
 ];
 
 export default function FAQPage() {
 	return (
-		<div className="h-full w-full flex justify-center items-start md:items-center py-auto p-6 pt-20">
+		<div className="h-fit w-full flex justify-center items-start py-auto p-6 py-[120px]">
 			<div className="animate-appearfast w-full max-w-3xl flex flex-col justify-center items-center gap-4 p-4 bg-background p-4 md:p-10 lg:p-12 rounded-lg drop-shadow-2xl">
 				<Accordion
 					type="single"

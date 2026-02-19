@@ -31,7 +31,7 @@ const Profile = ({
 export default function FAQPage() {
 	return (
 		<div className="h-fit w-full flex justify-center items-center py-[80px]">
-			<div className="animate-appearfast w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 p-4 bg-background p-4 md:p-10 lg:p-12 rounded-lg drop-shadow-2xl">
+			{/* <div className="animate-appearfast w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 p-4 bg-background p-4 md:p-10 lg:p-12 rounded-lg drop-shadow-2xl">
 				<Profile
 					name={"Megan & Brian"}
 					title={"Bride & groom"}
@@ -126,7 +126,7 @@ export default function FAQPage() {
 					img={""}
 					imgAlt={""}
 				/>
-			</div>
+			</div> */}
 		</div>
 	);
 }
