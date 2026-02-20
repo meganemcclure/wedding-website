@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
 	Sheet,
-	SheetClose,
 	SheetContent,
 	SheetHeader,
 	SheetTitle,
@@ -35,6 +34,14 @@ const pages = [
 ];
 
 export default function Navbar() {
+	const [open, setOpen] = useState(false);
+
+	const handleClose = () => {
+		setTimeout(() => {
+			setOpen(false);
+		}, 500);
+	};
+
 	return (
 		<nav
 			className="z-50 fixed top-0 w-full flex flex-row justify-end lg:justify-center gap-12 p-6 pb-10 bg-gradient-to-b from-background from-60% to-transparent"
@@ -55,7 +62,7 @@ export default function Navbar() {
 					{page.name}
 				</Link>
 			))}
-			<Sheet>
+			<Sheet open={open} onOpenChange={setOpen}>
 				<SheetTrigger>
 					<Menu className="lg:hidden h-8 w-8 text-primary" />
 				</SheetTrigger>
@@ -68,15 +75,14 @@ export default function Navbar() {
 						style={{ fontFamily: "Instrument Serif, serif" }}
 					>
 						{pages.map((page, index) => (
-							<SheetClose asChild>
-								<Link
-									key={index}
-									className={"text-2xl font-instrument-serif"}
-									href={page.href}
-								>
-									{page.name}
-								</Link>
-							</SheetClose>
+							<Link
+								key={index}
+								className={"text-2xl font-instrument-serif"}
+								href={page.href}
+								onClick={handleClose}
+							>
+								{page.name}
+							</Link>
 						))}
 					</div>
 				</SheetContent>
