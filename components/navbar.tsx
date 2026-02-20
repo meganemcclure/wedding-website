@@ -6,12 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 import {
 	Sheet,
+	SheetClose,
 	SheetContent,
 	SheetHeader,
 	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { useState } from "react";
 
 const pages = [
 	{
@@ -66,13 +68,15 @@ export default function Navbar() {
 						style={{ fontFamily: "Instrument Serif, serif" }}
 					>
 						{pages.map((page, index) => (
-							<Link
-								key={index}
-								className={"text-2xl font-instrument-serif"}
-								href={page.href}
-							>
-								{page.name}
-							</Link>
+							<SheetClose asChild>
+								<Link
+									key={index}
+									className={"text-2xl font-instrument-serif"}
+									href={page.href}
+								>
+									{page.name}
+								</Link>
+							</SheetClose>
 						))}
 					</div>
 				</SheetContent>
