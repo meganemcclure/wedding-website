@@ -19,10 +19,10 @@ const pages = [
 		name: "Home",
 		href: "/",
 	},
-	// {
-	// 	name: "Wedding Party",
-	// 	href: "/wedding-party",
-	// },
+	{
+		name: "Wedding Party",
+		href: "/wedding-party",
+	},
 	// {
 	// 	name: "Travel & Transportation",
 	// 	href: "./wedding-website/travel",
