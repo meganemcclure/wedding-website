@@ -166,7 +166,13 @@ const questions = [
 export default function FAQPage() {
 	return (
 		<div className="h-fit w-full flex justify-center items-start py-auto p-6 py-[120px]">
-			<div className="animate-appearfast w-full max-w-3xl flex flex-col justify-center items-center gap-4 p-4 bg-background p-4 md:p-10 lg:p-12 rounded-lg drop-shadow-2xl">
+			<div className="animate-appearfast w-full max-w-3xl flex flex-col justify-center items-center gap-8 p-4 bg-background p-4 md:p-10 lg:p-12 rounded-lg drop-shadow-2xl">
+				<h1
+					className={
+						"w-full text-4xl md:text-6xl lg:text-7xl text-primary -mb-4 md:-mb-6 lg:-mb-9"
+					}
+					style={{ fontFamily: "Italianno, serif" }}
+				>{`Frequently Asked Questions`}</h1>
 				<Accordion
 					type="single"
 					collapsible

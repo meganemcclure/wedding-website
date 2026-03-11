@@ -166,10 +166,10 @@ export default function FAQPage() {
 			<div className="animate-appearfast w-full max-w-3xl flex flex-col justify-center items-center gap-8 md:gap-12 p-4 bg-background p-4 md:p-10 lg:p-12 rounded-lg drop-shadow-2xl">
 				<h1
 					className={
-						"w-full text-5xl md:text-7xl lg:text-8xl text-primary -mb-4 md:-mb-6 lg:-mb-9"
+						"w-full text-4xl md:text-6xl lg:text-7xl text-primary -mb-4 md:-mb-6 lg:-mb-9"
 					}
 					style={{ fontFamily: "Italianno, serif" }}
-				>{`Who's in the wedding?`}</h1>
+				>{`Intro to the Wedding Party`}</h1>
 
 				<Profile
 					name={"Megan & Brian"}
