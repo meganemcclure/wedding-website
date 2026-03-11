@@ -97,8 +97,8 @@ const GROOMSMEN = [
 
 const PARENTS = [
 	{
-		name: "Scott & Rebecca McClure",
-		title: "Parents of the bride",
+		name: "Rebecca & Scott McClure",
+		title: "Mother and Father of the Bride",
 		description:
 			"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
 		img: (
@@ -111,8 +111,8 @@ const PARENTS = [
 		imgAlt: "",
 	},
 	{
-		name: "Chuck & Sherry Piché",
-		title: "Parents of the groom",
+		name: "Sherry & Chuck Piché",
+		title: "Mother and Father of the Groom",
 		description:
 			"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
 		img: (
@@ -168,7 +168,7 @@ export default function FAQPage() {
 
 				<Profile
 					name={"Megan & Brian"}
-					title={"Bride & groom"}
+					title={"Bride & Groom"}
 					description={
 						"Hello all! We're Megan and Brian, the bride and groom. We're so excited to have you all here celebrating our big day with us! We met in the summer of 2016, before we both headed off to university. Brian to Laurentian, and Megan to Queen's. By the time Canadian Thanksgiving had rolled around, we were officially dating. After 6 years of long distance dating (and many car rides back and forth) we finally moved in together in the winter of 2023. This October marks our 10th anniversary together, and we're topping it off by finally tying the knot this summer! We're so grateful to be surrounded by the people who mean the most to us, and we can't wait to celebrate this next chapter with all of you!"
 					}
