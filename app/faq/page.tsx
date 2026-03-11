@@ -71,7 +71,7 @@ const questions = [
 					className={"underline decoration-1"}
 					target="_blank"
 				>
-					Holiday Inn Sudbbury by IHG
+					Holiday Inn Sudbury by IHG
 				</Link>
 				, and the{" "}
 				<Link
